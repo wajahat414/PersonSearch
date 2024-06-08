@@ -4,8 +4,8 @@ This is a SwiftUI application that displays a list of names and allows searching
 
 ## Screenshots
 
-![Screenshot 1](Screenshots/shot1.png)
-![Screenshot 2](Screenshots/shot2.png)
+![Screenshot 1](https://github.com/wajahat414/PersonSearch/blob/main/ScreenShots/shot1.png?raw=true)
+![Screenshot 2](https://github.com/wajahat414/PersonSearch/blob/main/ScreenShots/shot2.png?raw=true)
 
 ## Features
 
