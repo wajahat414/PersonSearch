@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct coding_taskApp: App {
+struct PersonSearchApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

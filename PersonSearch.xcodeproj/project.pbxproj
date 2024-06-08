@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25C313212C143CE80081FE65 /* coding_taskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C313202C143CE80081FE65 /* coding_taskApp.swift */; };
-		25C313232C143CE80081FE65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C313222C143CE80081FE65 /* ContentView.swift */; };
+		25C313212C143CE80081FE65 /* PersonSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C313202C143CE80081FE65 /* PersonSearchApp.swift */; };
+		25C313232C143CE80081FE65 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C313222C143CE80081FE65 /* MainView.swift */; };
 		25C313252C143CEA0081FE65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C313242C143CEA0081FE65 /* Assets.xcassets */; };
 		25C313282C143CEA0081FE65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C313272C143CEA0081FE65 /* Preview Assets.xcassets */; };
+		25C313302C143D6E0081FE65 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C3132F2C143D6E0081FE65 /* Person.swift */; };
+		25C313332C143DCE0081FE65 /* NameListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C313322C143DCE0081FE65 /* NameListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		25C3131D2C143CE80081FE65 /* coding_task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coding_task.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		25C313202C143CE80081FE65 /* coding_taskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coding_taskApp.swift; sourceTree = "<group>"; };
-		25C313222C143CE80081FE65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		25C3131D2C143CE80081FE65 /* PersonSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C313202C143CE80081FE65 /* PersonSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSearchApp.swift; sourceTree = "<group>"; };
+		25C313222C143CE80081FE65 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		25C313242C143CEA0081FE65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25C313272C143CEA0081FE65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25C3132F2C143D6E0081FE65 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		25C313322C143DCE0081FE65 /* NameListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,7 @@
 		25C313142C143CE80081FE65 = {
 			isa = PBXGroup;
 			children = (
-				25C3131F2C143CE80081FE65 /* coding_task */,
+				25C3131F2C143CE80081FE65 /* PersonSearch */,
 				25C3131E2C143CE80081FE65 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +47,22 @@
 		25C3131E2C143CE80081FE65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				25C3131D2C143CE80081FE65 /* coding_task.app */,
+				25C3131D2C143CE80081FE65 /* PersonSearch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		25C3131F2C143CE80081FE65 /* coding_task */ = {
+		25C3131F2C143CE80081FE65 /* PersonSearch */ = {
 			isa = PBXGroup;
 			children = (
-				25C313202C143CE80081FE65 /* coding_taskApp.swift */,
-				25C313222C143CE80081FE65 /* ContentView.swift */,
+				25C313312C143DA30081FE65 /* viewModels */,
+				25C3132E2C143D470081FE65 /* model */,
+				25C313202C143CE80081FE65 /* PersonSearchApp.swift */,
+				25C313222C143CE80081FE65 /* MainView.swift */,
 				25C313242C143CEA0081FE65 /* Assets.xcassets */,
 				25C313262C143CEA0081FE65 /* Preview Content */,
 			);
-			path = coding_task;
+			path = PersonSearch;
 			sourceTree = "<group>";
 		};
 		25C313262C143CEA0081FE65 /* Preview Content */ = {
@@ -67,12 +73,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		25C3132E2C143D470081FE65 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				25C3132F2C143D6E0081FE65 /* Person.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		25C313312C143DA30081FE65 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				25C313322C143DCE0081FE65 /* NameListViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		25C3131C2C143CE80081FE65 /* coding_task */ = {
+		25C3131C2C143CE80081FE65 /* PersonSearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25C3132B2C143CEA0081FE65 /* Build configuration list for PBXNativeTarget "coding_task" */;
+			buildConfigurationList = 25C3132B2C143CEA0081FE65 /* Build configuration list for PBXNativeTarget "PersonSearch" */;
 			buildPhases = (
 				25C313192C143CE80081FE65 /* Sources */,
 				25C3131A2C143CE80081FE65 /* Frameworks */,
@@ -82,9 +104,9 @@
 			);
 			dependencies = (
 			);
-			name = coding_task;
+			name = PersonSearch;
 			productName = coding_task;
-			productReference = 25C3131D2C143CE80081FE65 /* coding_task.app */;
+			productReference = 25C3131D2C143CE80081FE65 /* PersonSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 25C313182C143CE80081FE65 /* Build configuration list for PBXProject "coding_task" */;
+			buildConfigurationList = 25C313182C143CE80081FE65 /* Build configuration list for PBXProject "PersonSearch" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				25C3131C2C143CE80081FE65 /* coding_task */,
+				25C3131C2C143CE80081FE65 /* PersonSearch */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25C313232C143CE80081FE65 /* ContentView.swift in Sources */,
-				25C313212C143CE80081FE65 /* coding_taskApp.swift in Sources */,
+				25C313232C143CE80081FE65 /* MainView.swift in Sources */,
+				25C313302C143D6E0081FE65 /* Person.swift in Sources */,
+				25C313212C143CE80081FE65 /* PersonSearchApp.swift in Sources */,
+				25C313332C143DCE0081FE65 /* NameListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +295,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"coding_task/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PersonSearch/Preview Content\"";
 				DEVELOPMENT_TEAM = T7FGRNF8B9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +324,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"coding_task/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PersonSearch/Preview Content\"";
 				DEVELOPMENT_TEAM = T7FGRNF8B9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -325,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		25C313182C143CE80081FE65 /* Build configuration list for PBXProject "coding_task" */ = {
+		25C313182C143CE80081FE65 /* Build configuration list for PBXProject "PersonSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25C313292C143CEA0081FE65 /* Debug */,
@@ -334,7 +358,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		25C3132B2C143CEA0081FE65 /* Build configuration list for PBXNativeTarget "coding_task" */ = {
+		25C3132B2C143CEA0081FE65 /* Build configuration list for PBXNativeTarget "PersonSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				25C3132C2C143CEA0081FE65 /* Debug */,
